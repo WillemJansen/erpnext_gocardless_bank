@@ -377,7 +377,7 @@ def prepare_bank_accounts(accounts, bank):
             "account_no": acc.get("resourceId", ""),
             "iban": acc.get("iban", ""),
             "balances": acc["balances"],
-            "status": acc["status"],
+            "status": acc["status"].capitalize(),
             "bank_account": "",
         })
     
